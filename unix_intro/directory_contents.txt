@@ -1,0 +1,7 @@
+notes.txt
+sample_names_2.txt
+data/
+directory_contents.txt
+example.txt
+experiment/
+six_commands/
