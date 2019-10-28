@@ -1,0 +1,280 @@
+    1  cd ~/Desktop/workshop/unix_intro
+    2  date
+    3  date -u
+    4  date-u
+    5  date u
+    6  head example.txt
+    7  head -n 5 example.txt
+    8  head --help
+    9  man head
+   10  man -head
+   11  head --help
+   12  q
+   13  pwd
+   14  ls
+   15  head /c/Users/Alma/Desktop/workshop/unix_intro
+   16  head /c/Users/Alma/Desktop/workshop/unix_intro.txt
+   17  head /c/Users/Alma/Desktop/workshop/unix_intro/example.txt
+   18  head notes.txt
+   19  head experiment/notes.txt
+   20  head exam
+   21  head example.txt 
+   22  head ex
+   23  cd experiment/
+   24  bwd
+   25  pwd
+   26  ls
+   27  head notes.txt
+   28  head notes.txt 
+   29  cd..
+   30  pwd
+   31  cd ..
+   32  pwd
+   33  tail example.txt
+   34  less example.txt
+   35  wc example.txt
+   36  man wc
+   37  --help wc
+   38  wc --help
+   39  wc -l
+   40  cp example.txt example_copy.txt
+   41  ls
+   42  ls data/
+   43  cp example.txt data/example_2.txt
+   44  ls data/
+   45  mv example_copy.txt experiment/
+   46  ls experiment/
+   47  rm experiment/example_copy.txt 
+   48  clear
+   49  nano samples.txt
+   50  head sample_names.txt
+   51  nano sample_names.txt
+   52  nano sample_names.txt 
+   53  head sample_names.txt 
+   54  mkdir subset
+   55  ls
+   56  rm subset
+   57  rmdir subset
+   58  rmdir experiment
+   59  rmdir experiment/
+   60  cp -r experiment experiment_copy
+   61  ls
+   62  rmdir -r experiment_copy/
+   63  ls
+   64  rm -r experiment_copy/
+   65  ls
+   66  mv sample_names.txt experiment/sample_names_2.txt
+   67  ls
+   68  wc -l exwc -l example.txt
+   69  wc -l example.txt
+   70  ls | ec -l
+   71  ls | wc -l
+   72  wc--help
+   73  wc --help
+   74  ls
+   75  wc-l
+   76  wc -l
+   77  ls data/
+   78  ls data/all_samples
+   79  ls data/all_samples | wc -l
+   80  head directory_contents.txt
+   81  ls > directory_contents.txt
+   82  ls
+   83  head directory_contents.txt
+   84  ls experiment/>directory_contents.txt 
+   85  head directory_contents/txt
+   86  head directory_contents.txt
+   87  ls >> directory_contents.txt
+   88  head directory_contents.txt
+   89  cd data/allsamples/
+   90  ls
+   91  all samples -ls
+   92  ls *.txt
+   93  ls *.tsv
+   94  ~/Desktop.workshop/unix_intro
+   95  all_Samples
+   96  cd ~/Desktop/workshop/unix_intro
+   97  cd ~/Desktop/workshop/unix_intro
+   98  cd ~/Desktop/workshop/unix_intro/data/all_samples
+   99  ls
+  100  pwd
+  101  ls *.tsv | wc -l
+  102  mkdir fastq_files
+  103  pwd
+  104  ls fastq_files
+  105  ls *.fq
+  106  mv *.fq fastq_files/
+  107  ls fastq_files/
+  108  ls | wc -l
+  109  history
+  110  history | pipe
+  111  history | tail
+  112  history | head
+  113  ls
+  114  cd fastq_files/
+  115  ls
+  116  pwd
+  117  ls sample_1?.fq
+  118  pwd
+  119  cd..
+  120  cd..
+  121  cd ..
+  122  cd ..
+  123  cd ..
+  124  cd six_commands
+  125  head gene
+  126  head gene gene_annotations.tsv
+  127  head -n gene_annotations.tsv
+  128  head -n 1 gene_annotations.tsv
+  129  wc -l gene_annotations.tsv
+  130  ls
+  131  pwd
+  132  cut --help
+  133  cut -f 1 gene_annotations.tsv
+  134  cut -f 1 gene_annotations.tsv |head
+  135  cut -f 1,3 gene_annotations.tsv |head
+  136  cut -f 1-3 gene_annotations.tsv |head
+  137  cut -f 1,4,3 gene_annotations.tsv |head
+  138  head color
+  139  head color
+  140  head color.txt
+  141  ls
+  142  colors
+  143  colors.txt
+  144  head colores.txt
+  145  head colors.txt
+  146  grep clue colors.txt
+  147  grep blue colors.txt
+  148  grep re colors.txt
+  149  grep K09765 gene_annotations.tsv
+  150  grep K18979 gene_annotations.tsv
+  151  pase colors.txt colores.txt
+  152  paste colors.txt colores.txt
+  153  my_var=ANGUS
+  154  my_var=TUCSON
+  155  echo my_var
+  156  echo $my_var
+  157  history
+  158  history > history_unix.txt
+  159  cat > history_unix.txt
+  160  cat > history_unix.txt
+  161  cd ..
+  162  cd ..
+  163  cd ..
+  164  cd ~/Desktop/workshop
+  165  mkdir git_lesson
+  166  cd git_lesson/
+  167  ls
+  168  git init
+  169  ls
+  170  ls -a
+  171  pwd
+  172  rm -r .git
+  173  ls -a
+  174  cd ..
+  175  pwd
+  176  ls
+  177  git init
+  178  ls -a
+  179  git config --global user.email aanides@email.arizona.edu
+  180  git config --global user.name aanides
+  181  head
+  182  git config --list
+  183  pwd
+  184  git add --all
+  185  git commit --message "initialize the workshop directory as a repository"
+  186  cd git_lesson/
+  187  touch practice.txt
+  188  pwd
+  189  ls
+  190  cat practice.txt
+  191  git add practice.txt 
+  192  git commit --message ' Add i committed.txt' 
+  193  git status
+  194  echo line >> hello.txt
+  195  head hello.txt
+  196  git status
+  197  git add hello.txt 
+  198  git status hello.txt 
+  199  git commit -mmessage 'more git practice and using >>'
+  200  git commit --message 'More git practice and using .."
+  201  git commit --message 'more git practice and using>>'
+  202  echo "new line" >> practice.txt
+  203  echo "new line!" >> practice.txt
+  204  head practice.txt 
+  205  git diff
+  206  git add practice.txt
+  207  git diff
+  208  nano practice
+  209  echo 'hello'
+  210  echo 'hello' >> practice.txt 
+  211  head
+  212  head practice.txt 
+  213  git diff 
+  214  nano practice.txt
+  215  git diff practice.txt
+  216  git commit --message "you did it"
+  217  git status 
+  218  git status
+  219  git diff
+  220  git add practice.txt 
+  221  git add practice.txt 
+  222  git commit
+  223  git commit --message "i did it"
+  224  git status
+  225  head practice.txt 
+  226  less practice.txt 
+  227  git log
+  228  git remote add origin https://github.com/aanides/Workshop.git
+  229  git push -u origin master
+  230  git remote --verbose
+  231  pwd
+  232  git pull
+  233  ls
+  234  nano file.txt
+  235  nano file.txt
+  236  git status
+  237  git add file.txt
+  238  git status
+  239  cit commit --message "edited file"
+  240  git commit --message 
+  241  git commit --message "edited file"
+  242  clear
+  243  git status
+  244  git log
+  245  git push
+  246  cd ..
+  247  cc ..
+  248  cd ~/Desktop/workshop/unix_challenge/
+  249  ls
+  250  cat Denmark
+  251  cat Venezuela.cc.txt 
+  252  countries.txt >> header
+  253  for country_name in $(ls *); do  cat $country_name >> country.txt; done 
+  254  ls
+  255  cat country.txt
+  256  cat country.txt | grep 1997
+  257  cat country.txt | grep 1997 > unixchallenge.txt
+  258  git commit --message "final unix challenge"
+  259  git commit
+  260  git add country.txt
+  261  git commit --message "unix challenge"
+  262  git push
+  263  grep -w 1997 country.txt
+  264  >1997.txt
+  265  cat 1997.txt
+  266  ls 1997.txt
+  267  head 1997.txt
+  268  country.txt
+  269  ls country.txt
+  270  cat country.txt
+  271  grep -w country.txt > 1997.txt
+  272  grep -w 1997 country.txt > 1997.txt
+  273  cat 1997.txt
+  274  git commit --message "1997 only"
+  275  git add 1997.txt
+  276  git commit --message "1997 only"
+  277  git push
+  278  git restore country.txt
+  279  head country.txt
+  280  history > history_2nd_file.txt
